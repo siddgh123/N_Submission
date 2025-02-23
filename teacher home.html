@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #4688F1;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .header {
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 20px;
+            background: black;
+        }
+
+        .card {
+            background: #1D5DBE;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
+
+        .card h2 {
+            margin-bottom: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn {
+            background: white;
+            color: #1F618D;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #AED6F1;
+        }
+
+        @media (max-width: 600px) {
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Teacher</div>
+    <div class="container">
+        <div class="card">
+            <h2>Mark Assignment</h2>
+            <p>Mark Assignments as completed</p>
+            <div class="buttons">
+                <button class="btn">First Year</button>
+                <button class="btn">Second Year</button>
+                <button class="btn">Third Year</button>
+                <button class="btn">B.E.</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Notify Students</h2>
+            <p>Notify Students about assignments</p>
+            <div class="buttons">
+                <button class="btn">First Year</button>
+                <button class="btn">Second Year</button>
+                <button class="btn">Third Year</button>
+                <button class="btn">B.E.</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Download Sheet</h2>
+            <p>Download assignments completion sheet</p>
+            <div class="buttons">
+                <button class="btn">First Year</button>
+                <button class="btn">Second Year</button>
+                <button class="btn">Third Year</button>
+                <button class="btn">B.E.</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

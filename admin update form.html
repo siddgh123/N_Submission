@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #4a90e2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #337ab7;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #286090;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Admin</div>
+    <div class="container">
+        <div class="form-group">
+            <label for="roll">Enter roll number </label>
+            <input type="text" id="roll" placeholder="Enter roll number" required>
+        </div>
+        <button type="submit">Submit</button>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobile</label>
+            <input type="text" id="mobile" placeholder="Enter mobile number">
+        </div>
+        <button type="submit">Update</button>
+    </div>
+</body>
+</html>
